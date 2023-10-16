@@ -22,9 +22,7 @@ const polygonIcon = `
 const web3onboardKey = 'web3-onboard:connectedWallets';
 
 const wcV2InitOptions: any = {
-  version: 2,
   projectId: 'ecc5180b7e97272ed41e03edd94d793d',
-  requiredChains: [1, 5, 1101, 1442],
   dappUrl: "https://near.org"
 };
 
@@ -46,7 +44,7 @@ export const onboard = init({
       id: 5,
       token: 'ETH',
       label: 'Goerli - Ethereum Testnet',
-      rpcUrl: 'https://rpc.ankr.com/eth_goerli',
+      rpcUrl: 'https://goerli.blockpi.network/v1/rpc/public	',
     },
     {
       id: 1101,
