@@ -1,4 +1,4 @@
-# BOS Gateway Template
+# BOS Gateway for Polygon zkEVM apps
 
 This repository contains a clean, light-weight gateawy for the [Blockchain Operating System](https://near.org/blog/near-announces-the-blockchain-operating-system) (BOS). It serves as a great starting point for launching a customized BOS gateway. Contributions are most welcome!
 
@@ -18,7 +18,7 @@ This repository contains a clean, light-weight gateawy for the [Blockchain Opera
 
 3. The entry component is ```BosMain``` and it's located at ```/src/components/index.tsx```
 
-    It loads the ```ciocan.near/widget/hello-world``` BOS component. The source can be found [here](https://near.org/near/widget/ComponentDetailsPage?src=ciocan.near/widget/hello-world&tab=source).
+    It loads the ```mattlock.near/widget/zk-evm-lp``` BOS component. The source can be found [here](https://near.org/near/widget/ComponentDetailsPage?src=mattlock.near/widget/zk-evm-lp&tab=source).
 
 4. Edit ```web3.js``` and change the projectId and dappUrl for WalletConnect
 (dappUrl is required by WalletConnect to work with the MetaMask on mobile)
@@ -42,8 +42,8 @@ More info on Next.js deployments [here](https://nextjs.org/docs/pages/building-y
 ## Running with docker
 
 ```bash
-docker build -t bos-gateway-template .
-docker run -p 3000:3000 bos-gateway-template
+docker build -t bos-polygon-gateway .
+docker run -p 3000:3000 bos-polygon-gateway
 ```
 
 ## Building the native apps
